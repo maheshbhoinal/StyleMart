@@ -1,0 +1,325 @@
+/* Media query for screen sizes up to 992px (typical for tablets and smaller) */
+@media (max-width: 992px) {
+  .main {
+    flex-direction: column;
+  }
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       
+    overflow-x: hidden; /* Hides horizontal scroll */
+  
+}
+
+header {
+background-color: #1e1e2f;
+  padding: 0px 10px;
+  width: 100%;
+    position: fixed;
+    margin-top: -20px;
+    z-index: 1;
+}
+.logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #00adb5;
+      text-transform: uppercase;
+      margin-top: 18px;
+    }
+
+img{
+  background-color: #F9F9F9;
+
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  font-family: cursive;
+}
+nav li {
+  list-style: none;
+  margin-top: 18px;
+    font-size: 20px
+}
+nav li ul {
+   color: #eeeeee;
+  display: inline-block;
+  margin-left: 7px;
+  padding: 8px 12px;
+      border-radius: 4px;
+    transition: background-color 0.2s, color 0.3s;
+     transform-origin: left;
+}
+
+nav a{
+  text-decoration: none;
+  color: unset;
+}
+
+nav li ul:hover{
+   /* background-color: #00adb5; */
+      color: #EEEEEE;
+       border-bottom: 2px solid #00adb5;
+     transform: scaleX(1.05); 
+     cursor: pointer;
+}
+
+nav li ul i {
+  font-size: 20px;     /* same size as menu */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+nav li ul i:hover {
+  color: #00adb5;      /* hover color */
+}
+
+.badge {
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  position: relative;
+  top: -10px;
+  left: -5px;
+}
+
+
+
+hr {        
+  margin-top: 20px;
+}
+.main {
+  border: px solid;
+  display: flex;
+  padding: 20px;
+      margin-top: 100px;
+}
+.hexashop {
+  border: px solid red;
+  width: 50%;
+  height: 500px;
+  margin: 10px;
+}
+
+.main #hexa {
+  background-image: url("https://templatemo.com/templates/templatemo_571_hexashop/assets/images/left-banner-image.jpg");
+  background-position: fixed;
+  background-repeat: no-repeat;
+  width: 50%;
+  background-size: 100%;
+}
+.awesome {
+  text-align: center;
+  margin-top: 268px;
+  line-height: 138px;
+}
+
+#hexa:hover{
+  cursor: pointer;
+    transform: scale(1.05,1.1);  
+}
+
+.awesome p {
+  margin-left: 14px;
+  color: white;
+  font-size: 22px;
+  font-style: italic;
+}
+.awesome h1 {
+  font-size: 53px;
+  color: white;
+  font-weight: bold;
+  font-family: system-ui;
+  line-height: 0px;
+  margin-top: -66px;
+}
+#all {
+  border: px solid blue;
+  display: flex;
+  flex-flow: wrap;
+}
+#all .men {
+  border: px solid green;
+  height: 211px;
+  width: 248px;
+  margin: 20px;
+  margin-top: 2px;
+}
+#all #women {
+  background-image: url("https://templatemo.com/templates/templatemo_571_hexashop/assets/images/baner-right-image-01.jpg");
+  background-position: fixed;
+  background-repeat: no-repeat;
+  width: 42%;
+  background-size: 100%;
+}
+#MEN {
+  background-image: url("https://templatemo.com/templates/templatemo_571_hexashop/assets/images/baner-right-image-02.jpg");
+  background-position: fixed;
+  background-repeat: no-repeat;
+  width: 42%;
+  background-size: 100%;
+}
+
+#kids {
+  background-image: url("https://templatemo.com/templates/templatemo_571_hexashop/assets/images/baner-right-image-03.jpg");
+  background-repeat: no-repeat;
+  width: 42%;
+  background-size: 100%;
+}
+
+#accessor {
+  background-image: url("https://templatemo.com/templates/templatemo_571_hexashop/assets/images/baner-right-image-04.jpg");
+  background-repeat: no-repeat;
+  width: 42%;
+  background-size: 100%;
+}
+
+
+section h2{
+  font-family: serif;
+    font-weight: bold;
+   
+    font-size: xxx-large;
+}
+.men p {
+  margin-left: 52px;
+  color: white;
+  font-size: 19px;
+  font-style: italic;
+}
+.men h1 {
+  font-size: 28px;
+  color: white;
+  font-weight: bold;
+  font-family: system-ui;
+  line-height: 85px;
+  margin-top: 33px;
+  margin-left: 91px;
+}
+
+.men:hover{
+  cursor: pointer;
+    transform: scale(1.05,1.1); 
+}
+
+
+.mens img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+  }
+
+ 
+
+  .cart-icon {
+ 
+    display: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+     display: flex;
+  gap: 10px;
+  justify-content: center;
+  }
+
+  .col:hover .cart-icon {
+    display: block;
+  }
+
+
+
+  .icon-box {
+  background-color: white;
+  padding: 8px;
+  border-radius: 50%; /* or use 8px for soft square shape */
+  transition: transform 0.2s ease;
+}
+
+.col-md-4:hover{
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+    transform: scaleY(1.05);
+    
+}
+
+.shadow-sm{
+  border: 0px solid black;
+    margin-left: -11px;
+    width: 106.5%;
+    transition: border 5s;
+}
+
+.col-md-4{
+  padding: 40px;
+      height: 672px;
+}
+
+.carousel-inner{
+  overflow:unset;
+}
+
+.carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: grey; /* Red background */
+    border-radius: 50%; /* Make it round */
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    background-size: 100%, 100%;
+  }
+
+ 
+
+  .carousel-control-prev {
+    left: -107px; /* Top-left corner */
+  }
+
+  .carousel-control-next {
+    right: -107px; /* Top-right corner */
+  }
+
+  .men-img img{
+     height: 337px;
+  object-fit: cover;
+  object-position: top;
+  }
+
+  .women-img img{
+    height: 53%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+.kids{
+  height: 61%;
+  object-fit: cover;
+  object-position: top;
+}      
+   
+#trendAccessorCarousel img {
+    height: 361px; /* or any desired uniform height */
+    object-fit: cover; /* ensures image fills the container without distortion */
+    width: 100%;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: blue;
+  }
+}
